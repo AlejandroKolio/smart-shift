@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+    <link type="text/css" href="css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link type="text/css" href="css/menu.min.css" th:href="@{/css/menu.min.css}" rel="stylesheet">
+    <link type="text/css" href="css/admin.css" th:href="@{/css/admin.css}" rel="stylesheet">
+    <link type="text/css" href="css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" rel="stylesheet">
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
+            th:src="@{https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js}"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
+            th:src="@{https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js}"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h2>Welcome to scheduler - <span class="text-secondary" style="color:darkgreen" th:text="${#authentication.name}"></span></h2>
+
+        <hr>
+
+        <form th:action="@{/logout}" method="post">
+            <button type="submit" class="btn btn-sm btn-warning btn-group-sm" value="Sign Out">Sign Out</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery.min.js" th:src="@{js/jquery.min.js}"></script>
+<script src="js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+<script src="js/menu.min.js" th:src="@{/js/menu.min.js}"></script>
+<script src="js/admin.js" th:src="@{/js/admin.js}"></script>
+</body>
+</html>

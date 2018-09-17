@@ -2,10 +2,7 @@ package com.scheduler.app.smartshift.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 
 import javax.persistence.*;
@@ -20,7 +17,8 @@ import java.util.List;
  *
  * <p>Time: 11:24
  */
-@Data
+@Getter
+@Setter
 @Entity
 @Builder
 @NoArgsConstructor

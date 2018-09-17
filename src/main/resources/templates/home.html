@@ -22,7 +22,9 @@
 <body>
 <div class="container">
     <div class="row">
-        <h2>Welcome to scheduler - <span class="text-secondary" style="color:darkgreen" th:text="${#authentication.name}"></span></h2>
+        <h2>Welcome to scheduler - <span class="text-secondary" style="color:darkgreen"
+                                         th:text="${#authentication.principal.employee.firstName} + ' ' +
+                                         ${#authentication.principal.employee.lastName}"></span></h2>
 
         <hr>
 
